@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>猫GIF</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="/styles/app.css" />
-</head>
-<body>
-  <div class="container">
-    <h1 class="title">猫GIFガチャ</h1>
-    <button id="play" class="button is-primary">遊ぶ</button>
-    <div id="result" class="hidden">
-      <figure>
-        <img id="gif" src="" alt="" />
-      </figure>
-      <button id="again" class="button">もう一回</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>猫GIF</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/styles/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">猫GIFガチャ</h1>
+      <button id="play" class="button is-primary">遊ぶ</button>
+      <div id="result" class="hidden">
+        <figure><img id="gif" src="" alt="" /></figure>
+        <button id="again" class="button">もう一回</button>
+      </div>
     </div>
-  </div>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="/scripts/app.js"></script>
-</body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
 </html>
