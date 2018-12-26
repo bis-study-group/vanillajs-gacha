@@ -6,7 +6,10 @@ const gifImg = document.getElementById('gif');
 playButton.addEventListener('click', function() {
   axios.get('/api/gacha')
     .then(response => {
-      // Insert code here...
+      const data = response.data;
+      gifImg.src = data.url;
+
+      resultBlock.classList.remove('hidden');
     });
 });
 
