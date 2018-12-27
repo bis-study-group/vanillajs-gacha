@@ -4,10 +4,11 @@ const againButton = document.getElementById('again');
 const gifImg = document.getElementById('gif');
 
 playButton.addEventListener('click', function() {
-  axios.get('/api/gacha')
-    .then(response => {
-      // Insert code here...
-    });
+  axios.get('/api/gacha').then(response => {
+    gifImg.src = response.data.url;
+    playButton.classList.add('hidden');
+    resultBlock.classList.remove('hidden');
+  });
 });
 
 againButton.addEventListener('click', function() {
